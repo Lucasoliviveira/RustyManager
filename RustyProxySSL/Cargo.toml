@@ -1,0 +1,9 @@
+[package]
+name = "RustyProxySSL"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["io-util", "net", "macros", "rt-multi-thread", "sync"] }
+tokio-rustls = { version = "0.26.0", default-features = false }
+rustls = { version = "0.23.15", default-features = false, features = ["ring"] }
+rustls-pemfile = "2.2.0"
